@@ -9,7 +9,13 @@ h1 {
 #controls {
     text-align: center;
 }
-.time {
+#timer {
     font-weight: bold;
     font-size: 3em;
+}
+.img {
+    height: 30vh;/*
+    background-color: red;*/
+    background-image: url("pomodoro.jpg");
+    background-repeat: no-repeat;
 }

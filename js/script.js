@@ -4,13 +4,6 @@
  * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * */
 
-/* 
-   var temps = 25;
-   var sec_in_minutes = 60;
-   var minuteurMin;
-   var minuteurSec;
-*/
-
 var temps = 25;
 var sec_in_min = 60;
 var minuteur_minute;
@@ -32,8 +25,9 @@ function pauseMinuteur() {
     clearInterval(pausetime);
 }
 function stopMinuteur() {
-    setTimeout(stoptimer);
+    clearTimeout(temps);
 }
+/*stop relance le lanceminuteur */
 
 function Mise_a_jour_interface() {
     document.getElementById('timer').innerHTML = minuteur_minute + ':' + minuteur_sec;
